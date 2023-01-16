@@ -169,9 +169,12 @@ ul{margin-bottom: 0;}
 .heading{
     color: #FFFFFF;
     font-family: Oswald, sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 50px;
+}
+.heading span{
+    font-size: 35px;
 }
 .text{
     color: #FFFFFF;
@@ -523,7 +526,7 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
     transform: translateY(-3px);
 }
 .header-appear .fixed-nav-logo img{
-    width: 30%;
+    width: 20%;
 }
 .header-appear .main-navigation .simple-navbar{
     display: flex;
@@ -949,7 +952,7 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
 .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading{
     color: #FFFFFF;
     font-family: Oswald, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -960,7 +963,7 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
     color: #FFFFFF;
     font-weight: 300;
     font-family: Roboto, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 .slider-area .slider-arrows{
@@ -2056,9 +2059,9 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
         margin-right: 0;
         transform: translateY(-3px);
     }
-    .header-appear .fixed-nav-logo img {
+    /* .header-appear .fixed-nav-logo img {
         width: 50%;
-    }
+    } */
     .side-menu {
         width: 100%;
     }
@@ -2292,7 +2295,7 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
         transform: translateY(-3px);
     }
     .header-appear .fixed-nav-logo img {
-        width: 60%;
+        width: 35%;
     }
     .side-menu {
         width: 100%;
@@ -2477,7 +2480,7 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
         right: -4%;
     }
     .slider-area .slider-detail .slider-slide .slider-inner-content .slide-text {
-        font-size: 14px;
+        font-size: 18px;
     }
     .testimonial-sec .testimonial-area .container {
         max-width: 1040px;

@@ -112,16 +112,10 @@ class App extends React.Component {
               <div className="container">
                 <div className="row">
                   <div className="col-4 col-lg-3">
-                    <a
-                      className="navbar-brand simple-nav-logo"
-                      href="/"
-                    >
+                    <a className="navbar-brand simple-nav-logo" href="/">
                       <img src="creative-startup/img/nvctiii.png" alt="logo" />
                     </a>
-                    <a
-                      className="navbar-brand fixed-nav-logo"
-                      href="/"
-                    >
+                    <a className="navbar-brand fixed-nav-logo" href="/">
                       <img src="creative-startup/img/nvctii.svg" alt="logo" />
                     </a>
                   </div>
@@ -142,27 +136,27 @@ class App extends React.Component {
                               ABOUT
                             </a>
                           </li>
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                             <a
                               className="nav-link scroll"
                               href="#company-portfolio-section"
                             >
                               PORTFOLIO
                             </a>
-                          </li>
+                          </li> */}
                           <li className="nav-item">
                             <a
                               className="nav-link scroll"
                               href="#testimonial-sec"
                             >
-                              CLIENTS
+                              TESTIMONIALS
                             </a>
                           </li>
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                             <a className="nav-link scroll" href="#blog-sec">
                               BLOG
                             </a>
-                          </li>
+                          </li> */}
                           <li className="nav-item">
                             <a className="nav-link scroll" href="#contact-sec">
                               CONTACT
@@ -235,11 +229,8 @@ class App extends React.Component {
               <div className="container">
                 <div className="row w-100 side-menu-inner-content">
                   <div className="col-12 d-flex justify-content-center align-items-center">
-                    <a
-                      href="/"
-                      className="navbar-brand"
-                    >
-                      <img src="creative-startup/img/logo.png" alt="logo" />
+                    <a href="/" className="navbar-brand">
+                      <img src="creative-startup/img/nvctiii.png" alt="logo" />
                     </a>
                   </div>
                   <div className="col-12 col-lg-8">
@@ -255,27 +246,27 @@ class App extends React.Component {
                             ABOUT
                           </a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                           <a
                             className="nav-link scroll"
                             href="#company-portfolio-section"
                           >
                             PORTFOLIO
                           </a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                           <a
                             className="nav-link scroll"
                             href="#testimonial-sec"
                           >
-                            CLIENTS
+                            TESTIMONIALS
                           </a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                           <a className="nav-link scroll" href="#blog-sec">
                             BLOG
                           </a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                           <a className="nav-link scroll" href="#contact-sec">
                             CONTACT
@@ -354,12 +345,11 @@ class App extends React.Component {
                 <div className="slider-slide">
                   <div className="slider-inner-content">
                     <h4 className="slide-heading">
-                      CREATIVE <span>DIGITAL AGENCY</span>
+                      FOSTERING <span> INNOVATION COLLABORATION</span>
                     </h4>
                     <p className="slide-text">
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting. Lorem Ipsum has been the industry’s standard
-                      dummy. Lorem Ipsum has been the industry’s standard dummy.
+                      To build a vibrant innovation ecosystem by establishing a
+                      network between innovators, academia and incubators.
                     </p>
                     <a
                       href="#about-sec"
@@ -375,13 +365,12 @@ class App extends React.Component {
                 <div className="slider-slide">
                   <div className="slider-inner-content">
                     <h4 className="slide-heading">
-                      MODREN <span>CREATIVE STUDIO</span>
+                      YOUTH <span> INNOVATION INCUBATOR</span>
                     </h4>
                     <p className="slide-text">
-                      Lorem Ipsum has been the industry’s standard dummy. Lorem
-                      ipsum is simply dummy text of the printing and
-                      typesetting. Lorem Ipsum has been the industry’s standard
-                      dummy.
+                      To attract a large number of youth who demonstrate problem
+                      solving zeal and abilities to work on new
+                      technology/innovation based start-ups.
                     </p>
                     <a
                       href="#about-sec"
@@ -397,12 +386,33 @@ class App extends React.Component {
                 <div className="slider-slide">
                   <div className="slider-inner-content">
                     <h4 className="slide-heading">
-                      STARTUP <span>MODERN WORKS</span>
+                      NURTURING <span> YOUNG INNOVATORS </span>
                     </h4>
                     <p className="slide-text">
-                      Lorem Ipsum has been the industry’s standard dummy. Lorem
-                      Ipsum has been the industry’s standard dummy. Lorem ipsum
-                      is simply dummy text of the printing and typesetting.
+                      To encourage, inspire and nurture young brains by
+                      supporting them to work with new ideas and converting them
+                      into concept and prototype.
+                    </p>
+                    <a
+                      href="#about-sec"
+                      className="btn anim-btn rounded-pill scroll"
+                    >
+                      LEARN MORE <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a>
+                  </div>
+                </div>
+                <div className="slider-slide">
+                  <div className="slider-inner-content">
+                    <h4 className="slide-heading">
+                      CREATIVITY <span> FOR SOLUTIONS</span>
+                    </h4>
+                    <p className="slide-text">
+                      To generate innovative solutions relevant to the local and
+                      global problems through experimentation, innovation and
+                      creativity.
                     </p>
                     <a
                       href="#about-sec"
@@ -422,13 +432,16 @@ class App extends React.Component {
                 data-depth="0.1"
               >
                 <div className="img-slide">
-                  <img src="creative-startup/img/slide1.jpg" />
+                  <img src="creative-startup/img/s1.webp" />
                 </div>
                 <div className="img-slide">
-                  <img src="creative-startup/img/slide2.jpg" />
+                  <img src="creative-startup/img/s2.webp" />
                 </div>
                 <div className="img-slide">
-                  <img src="creative-startup/img/slide3.jpg" />
+                  <img src="creative-startup/img/s3.webp" />
+                </div>
+                <div className="img-slide">
+                  <img src="creative-startup/img/s4.webp" />
                 </div>
               </div>
             </div>
@@ -465,7 +478,7 @@ class App extends React.Component {
                       <div className="icon-holder">
                         <i className="lni lni-briefcase"></i>
                       </div>
-                      <h4 className="card-heading">Make Business</h4>
+                      <h4 className="card-heading">Building Brilliance</h4>
                     </div>
                   </div>
                   <div className="col-12 col-lg-6 services text-center">
@@ -473,7 +486,7 @@ class App extends React.Component {
                       <div className="icon-holder">
                         <i className="lni lni-bulb"></i>
                       </div>
-                      <h4 className="card-heading">Agency Ideas</h4>
+                      <h4 className="card-heading">Empowering Minds</h4>
                     </div>
                   </div>
                   <div className="col-12 col-lg-6 services text-center">
@@ -489,7 +502,7 @@ class App extends React.Component {
                       <div className="icon-holder">
                         <i className="las la-wallet"></i>
                       </div>
-                      <h4 className="card-heading">Make Money</h4>
+                      <h4 className="card-heading">Transforming Lives</h4>
                     </div>
                   </div>
                 </div>
@@ -498,7 +511,9 @@ class App extends React.Component {
                 <div className="about-content wow fadeInRight">
                   <div className="about-inner-content">
                     <h4 className="heading">
-                      WE ARE <span>INNOVATION CELL OF IIT ISM</span>
+                      WELCOME TO NVCTI -
+                      <br />
+                      <span>WE ARE INNOVATION CELL OF IIT ISM</span>
                     </h4>
                     <p className="text">
                       With the mission to provide students with a platform for
@@ -536,11 +551,8 @@ class App extends React.Component {
         {/* <!--About sec End--> */}
 
         {/* <!--Stats sec start--> */}
-        <section
-          className="stats-sec padding-top padding-bottom"
-          id="stats-sec"
-        >
-          <div className="container">
+        <section className="stats-sec padding-bottom" id="stats-sec">
+          {/* <div className="container">
             <div className="row">
               <div className="col-12 stats-heading-area text-center">
                 <span className="sub-heading">
@@ -576,7 +588,7 @@ class App extends React.Component {
                 <h4 className="darkcolor">New ventures we became part of</h4>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         {/* <!--Stats sec End--> */}
 
@@ -591,9 +603,9 @@ class App extends React.Component {
                     WE HAVE <span>AMAZING TEAM</span>
                   </h4>
                   <p className="text">
-                    Lorem ipsum is simply dummy text of the printing and
-                    typesetting. Lorem Ipsum has been the industry’s standard
-                    dummy.
+                    Our Faculty is Committed to Providing Students with Hands-On
+                    Learning Opportunities and Real-World Experience, to Produce
+                    well-rounded and Skilled Engineers.
                   </p>
                 </div>
               </div>
@@ -603,7 +615,7 @@ class App extends React.Component {
                     <div className="item text-center">
                       <div className="team-box">
                         <div className="img-holder position-relative">
-                          <img src="creative-startup/img/team1.jpg" />
+                          <img src="creative-startup/img/ajitsir.jpeg" />
                           <div className="overlay d-flex justify-content-center align-items-center">
                             {/* <!--Team Social--> */}
                             <ul className="team-social">
@@ -640,30 +652,21 @@ class App extends React.Component {
                                   ></i>
                                 </a>
                               </li>
-                              <li>
-                                <a
-                                  className="pinterest-text-hvr"
-                                  href="javascript:void(0);"
-                                >
-                                  <i
-                                    className="lab la-pinterest-p"
-                                    aria-hidden="true"
-                                  ></i>
-                                </a>
-                              </li>
                             </ul>
                           </div>
                         </div>
                         <div className="team-info">
-                          <h4 className="team-name">Eden Wooderburg</h4>
-                          <p className="team-designation">Creative Head</p>
+                          <h4 className="team-name">Prof. Ajit Kumar</h4>
+                          <p className="team-designation">
+                            Head, Strategy & Execution, NVCTI
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div className="item text-center">
                       <div className="team-box">
                         <div className="img-holder position-relative">
-                          <img src="creative-startup/img/team2.jpg" />
+                          <img src="creative-startup/img/pankajsir.jpg" />
                           <div className="overlay d-flex justify-content-center align-items-center">
                             {/* <!--Team Social--> */}
                             <ul className="team-social">
@@ -700,23 +703,14 @@ class App extends React.Component {
                                   ></i>
                                 </a>
                               </li>
-                              <li>
-                                <a
-                                  className="pinterest-text-hvr"
-                                  href="javascript:void(0);"
-                                >
-                                  <i
-                                    className="lab la-pinterest-p"
-                                    aria-hidden="true"
-                                  ></i>
-                                </a>
-                              </li>
                             </ul>
                           </div>
                         </div>
                         <div className="team-info">
-                          <h4 className="team-name">Angelo Walking</h4>
-                          <p className="team-designation">Design Lead</p>
+                          <h4 className="team-name">Prof. Pankaj Mishra</h4>
+                          <p className="team-designation">
+                            Acting Dean(IIE) | HOC NVCTI | Dean(Innovation)
+                          </p>
                         </div>
                       </div>
                     </div>
