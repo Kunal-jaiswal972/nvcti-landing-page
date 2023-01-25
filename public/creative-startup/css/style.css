@@ -449,12 +449,13 @@ header .top-social-links li a:hover i{
 
 /*main navigation*/
 header .simple-nav-logo{
-    background-color: #000000;
-    padding: 35px 10px 40px 10px;
+    background-color: #fff;
+    padding: 20px 10px 20px 10px;
     margin-right: 0;
     text-align: center;
     position: relative;
     z-index: 111;
+    /* outline: 5px solid #f71c52; */
 }
 header .fixed-nav-logo{
     display: none;
