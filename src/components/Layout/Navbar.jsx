@@ -95,24 +95,23 @@ const Navbar = () => {
                     id="navbarSupportedContent"
                   >
                     <ul className="navbar-nav ml-auto">
-                      <li className="nav-item active">
-                        <a className="nav-link home" href="/">
+                      <li className="nav-item">
+                        <a
+                          className="nav-link"
+                          href={location.pathname === "/" ? "#" : "/"}
+                        >
                           HOME
                         </a>
                       </li>
                       <li className="nav-item">
                         {/* <div className="nav-link scroll"> */}
-                          <Dropdown/>
+                        <Dropdown />
                         {/* </div> */}
                       </li>
                       <li className="nav-item">
                         <a
                           className="nav-link scroll"
-                          href={
-                            location.pathname === "/"
-                              ? "#gallery"
-                              : "/"
-                          }
+                          href={location.pathname === "/" ? "#gallery" : "/"}
                         >
                           GALLERY
                         </a>
@@ -206,7 +205,10 @@ const Navbar = () => {
                 <nav className="side-nav w-100">
                   <ul className="navbar-nav">
                     <li className="nav-item">
-                      <a className="nav-link scroll" href="/">
+                      <a
+                        className="nav-link scroll"
+                        href={location.pathname === "/" ? "#" : "/"}
+                      >
                         HOME
                       </a>
                     </li>
@@ -228,11 +230,7 @@ const Navbar = () => {
                     <li className="nav-item">
                       <a
                         className="nav-link scroll"
-                        href={
-                          location.pathname === "/"
-                            ? "#gallery"
-                            : "/"
-                        }
+                        href={location.pathname === "/" ? "#gallery" : "/"}
                       >
                         GALLERY
                       </a>
