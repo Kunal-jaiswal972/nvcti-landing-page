@@ -98,7 +98,7 @@ jQuery(function ($) {
 
       //  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
-       if (hash === "#company-portfolio-section") {
+       if (hash === "#gallery") {
            var new_height = port_target - 806;
            if (target.length) {
                $('html,body').stop().animate({

@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Dropdown from "../dropdown/Dropdown";
 
 const Navbar = () => {
+  const location = useLocation();
   return (
     <header id="home">
       <div className="inner-header">
@@ -18,58 +20,56 @@ const Navbar = () => {
               <div className="col-6">
                 <ul className="top-personal-info">
                   <li>
-                    <Link to="#">
+                    <a href="#">
                       <i className="las la-phone"></i>
-                      <Link to="tel:+919470194401">+91 94701 94401</Link>
-                    </Link>
+                      <a href="tel:+919470194401">+91 94701 94401</a>
+                    </a>
                   </li>
                   <li>
-                    <Link to="#">
+                    <a href="#">
                       <i className="las la-envelope"></i>
-                      <Link to="mailto:nvcti@iitism.ac.in">
-                        nvcti@iitism.ac.in
-                      </Link>
-                    </Link>
+                      <a href="mailto:nvcti@iitism.ac.in">nvcti@iitism.ac.in</a>
+                    </a>
                   </li>
                 </ul>
               </div>
               <div className="col-6 text-right">
                 <ul className="top-social-links">
                   <li>
-                    <Link
-                      to="https://www.facebook.com/nvcti/"
+                    <a
+                      href="https://www.facebook.com/nvcti/"
                       className="link-holder fb"
                       target="_blank"
                     >
                       <i className="lab la-facebook-f"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="https://twitter.com/nvcti1"
+                    <a
+                      href="https://twitter.com/nvcti1"
                       target="_blank"
                       className="link-holder twit"
                     >
                       <i className="lab la-twitter"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="https://www.linkedin.com/company/nvcti-iitism/"
+                    <a
+                      href="https://www.linkedin.com/company/nvcti-iitism/"
                       target="_blank"
                       className="link-holder link-in"
                     >
                       <i className="lab la-linkedin-in"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="https://www.instagram.com/nvcti.iitism/"
+                    <a
+                      href="https://www.instagram.com/nvcti.iitism/"
                       target="_blank"
                       className="link-holder insta"
                     >
                       <i className="lab la-instagram"></i>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -81,12 +81,12 @@ const Navbar = () => {
           <div className="container">
             <div className="row">
               <div className="col-4 col-lg-3">
-                <Link className="navbar-brand simple-nav-logo" to="/">
+                <a className="navbar-brand simple-nav-logo" href="/">
                   <img src="assests/final.jpg" alt="logo" />
-                </Link>
-                <Link className="navbar-brand fixed-nav-logo" to="/">
+                </a>
+                <a className="navbar-brand fixed-nav-logo" href="/">
                   <img src="assests/nvcti-transparent.png" alt="logo" />
-                </Link>
+                </a>
               </div>
               <div className="col-8 col-lg-9 simple-navbar">
                 <nav className="navbar navbar-expand-lg">
@@ -96,72 +96,76 @@ const Navbar = () => {
                   >
                     <ul className="navbar-nav ml-auto">
                       <li className="nav-item active">
-                        <Link className="nav-link home" to="#">
+                        <a className="nav-link home" href="/">
                           HOME
-                        </Link>
+                        </a>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link scroll" to="#about-sec">
-                          ABOUT
-                        </Link>
+                        {/* <div className="nav-link scroll"> */}
+                          <Dropdown/>
+                        {/* </div> */}
                       </li>
                       <li className="nav-item">
-                        <Link
+                        <a
                           className="nav-link scroll"
-                          to="#company-portfolio-section"
+                          href={
+                            location.pathname === "/"
+                              ? "#gallery"
+                              : "/"
+                          }
                         >
-                          PORTFOLIO
-                        </Link>
+                          GALLERY
+                        </a>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link scroll" to="#testimonial-sec">
-                          TESTIMONIALS
-                        </Link>
+                        <a className="nav-link scroll" href="/administration">
+                          ADMINISTRATION
+                        </a>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link scroll" to="#contact-sec">
+                        <a className="nav-link scroll" href="#contact-sec">
                           CONTACT
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
                 </nav>
                 <ul className="top-social-links fixed-nav-links">
                   <li>
-                    <Link
-                      to="https://www.facebook.com/nvcti/"
+                    <a
+                      href="https://www.facebook.com/nvcti/"
                       className="link-holder fb"
                       target="_blank"
                     >
                       <i className="lab la-facebook-f"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="https://twitter.com/nvcti1"
+                    <a
+                      href="https://twitter.com/nvcti1"
                       target="_blank"
                       className="link-holder twit"
                     >
                       <i className="lab la-twitter"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="https://www.linkedin.com/company/nvcti-iitism/"
+                    <a
+                      href="https://www.linkedin.com/company/nvcti-iitism/"
                       target="_blank"
                       className="link-holder link-in"
                     >
                       <i className="lab la-linkedin-in"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="https://www.instagram.com/nvcti.iitism/"
+                    <a
+                      href="https://www.instagram.com/nvcti.iitism/"
                       target="_blank"
                       className="link-holder insta"
                     >
                       <i className="lab la-instagram"></i>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -169,15 +173,15 @@ const Navbar = () => {
           </div>
         </div>
         {/* <!--toggle btn--> */}
-        <Link
-          to="javascript:void(0)"
+        <a
+          href="javascript:void(0)"
           className="sidemenu_btn"
           id="sidemenu_toggle"
         >
           <span></span>
           <span></span>
           <span></span>
-        </Link>
+        </a>
       </div>
       {/* <!--Side Nav--> */}
       <div className="side-menu hidden side-menu-opacity">
@@ -190,44 +194,58 @@ const Navbar = () => {
           <div className="container">
             <div className="row w-100 side-menu-inner-content">
               <div className="col-12 d-flex justify-content-center align-items-center">
-                <Link to="/" className="navbar-brand">
+                <a href="/" className="navbar-brand">
                   <img
                     src="assests/nvcti-light.webp"
                     width="150px"
                     alt="logo"
                   />
-                </Link>
+                </a>
               </div>
               <div className="col-12 col-lg-8">
                 <nav className="side-nav w-100">
                   <ul className="navbar-nav">
                     <li className="nav-item">
-                      <Link className="nav-link scroll" to="#home">
+                      <a className="nav-link scroll" href="/">
                         HOME
-                      </Link>
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link scroll" to="#about-sec">
-                        ABOUT
-                      </Link>
+                      <a className="nav-link scroll" href="/aboutISM">
+                        ABOUT ISM
+                      </a>
                     </li>
                     <li className="nav-item">
-                      <Link
+                      <a className="nav-link scroll" href="/aboutNVCTI">
+                        ABOUT NVCTI
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link scroll" href="/administration">
+                        ADMINISTRATION
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a
                         className="nav-link scroll"
-                        to="#company-portfolio-section"
+                        href={
+                          location.pathname === "/"
+                            ? "#gallery"
+                            : "/"
+                        }
                       >
-                        PORTFOLIO
-                      </Link>
+                        GALLERY
+                      </a>
                     </li>
-                    <li className="nav-item">
-                      <Link className="nav-link scroll" to="#testimonial-sec">
+                    {/* <li className="nav-item">
+                      <a className="nav-link scroll" href="#testimonial-sec">
                         TESTIMONIALS
-                      </Link>
-                    </li>
+                      </a>
+                    </li> */}
                     <li className="nav-item">
-                      <Link className="nav-link scroll" to="#contact-sec">
+                      <a className="nav-link scroll" href="#contact-sec">
                         CONTACT
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </nav>
@@ -240,40 +258,40 @@ const Navbar = () => {
                   </div>
                   <ul className="social-icons-simple">
                     <li>
-                      <Link
+                      <a
                         className="facebook-text-hvr"
-                        to="https://www.facebook.com/nvcti/"
+                        href="https://www.facebook.com/nvcti/"
                         target="_blank"
                       >
                         <i className="fab fa-facebook-f"></i>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
+                      <a
                         className="instagram-text-hvr"
-                        to="https://twitter.com/nvcti1"
+                        href="https://twitter.com/nvcti1"
                         target="_blank"
                       >
                         <i className="fab fa-twitter"></i>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
+                      <a
                         className="instagram-text-hvr"
-                        to="https://www.youtube.com/@nareshvashishtcentrefortin1613"
+                        href="https://www.youtube.com/@nareshvashishtcentrefortin1613"
                         target="_blank"
                       >
                         <i className="fab fa-youtube"></i>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
+                      <a
                         className="instagram-text-hvr"
-                        to="https://www.instagram.com/nvcti.iitism/"
+                        href="https://www.instagram.com/nvcti.iitism/"
                         target="_blank"
                       >
                         <i className="fab fa-instagram"></i>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                   <p className="text-white">© 2023 NVCTI IIT(ISM) DHANBAD -</p>
@@ -283,7 +301,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Link id="close_side_menu" to="javascript:void(0);"></Link>
+      <a id="close_side_menu" href="javascript:void(0);"></a>
     </header>
   );
 };
