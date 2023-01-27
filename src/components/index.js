@@ -6,11 +6,10 @@ import About from "./Home/About";
 import Gallery from "./Home/Gallery";
 import Testimonial from "./About/Testimonial";
 import Footer from "./Layout/Footer";
-import Contact from "./Layout/Contact";
 import Stats from "./Home/Stats";
 import Scroll_to_top_btn from "./Layout/Scroll_to_top_btn";
 import Hero from "./About/Hero";
-import Administration from "./About/Administration";
+import Administration from "../pages/Administration";
 import Content from "./About/Content";
 
 export {
@@ -22,7 +21,6 @@ export {
   Gallery,
   Testimonial,
   Footer,
-  Contact,
   Stats,
   Scroll_to_top_btn,
   Hero,
