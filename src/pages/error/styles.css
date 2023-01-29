@@ -31,7 +31,7 @@ button {
   border-radius: 25px;
   background-color: hsl(116, 56%, 43%);
   color: #ffffff;
-  font-weight: Bold;
+  font-weight: bold;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
