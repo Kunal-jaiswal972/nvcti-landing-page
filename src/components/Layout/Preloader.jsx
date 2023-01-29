@@ -1,31 +1,8 @@
-import React from "react";
-
 const Preloader = () => {
   return (
     <div className="preloader">
       <div className="center">
-        <div className="loader loader-32">
-          <div className="loader-container">
-            <div className="ball-wrapper">
-              <div className="ball-holder">
-                <div className="ball"></div>
-              </div>
-              <div className="shadow"></div>
-            </div>
-            <div className="ball-wrapper">
-              <div className="ball-holder">
-                <div className="ball"></div>
-              </div>
-              <div className="shadow"></div>
-            </div>
-            <div className="ball-wrapper">
-              <div className="ball-holder">
-                <div className="ball"></div>
-              </div>
-              <div className="shadow"></div>
-            </div>
-          </div>
-        </div>
+        <img src={process.env.PUBLIC_URL + '/assests/nvcti_animated.gif'} alt="🕗 Loading..." style={{width: '10%', height: '10%'}}   />
       </div>
     </div>
   );
