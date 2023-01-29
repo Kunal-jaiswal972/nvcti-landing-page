@@ -8,6 +8,7 @@ const Dropdown = () => {
       <div className="dropdown-content">
         <a href="/aboutISM">About IIT(ISM)</a>
         <a href="/aboutNVCTI">About NVCTI</a>
+        <a href="/labs">Labs</a>
         <a href="/administration">Administration</a>
       </div>
     </div>

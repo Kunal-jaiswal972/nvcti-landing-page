@@ -39,10 +39,10 @@ const Content = () => {
                     </div>
                     <div className="col-lg-6 stand-img-des">
                       <div className="d-inline-block">
-                        {/* <p className="sub-heading text-center">
+                        <p className="sub-heading text-center">
                           Most flexible one page
                         </p>
-                        <h2 className="gradient-text1">Standalone Heading</h2> */}
+                        {/* <h2 className="gradient-text1">Standalone Heading</h2> */}
                         <p className="para_text">
                           Indian Institute of Technology (Indian School of
                           Mines), Dhanbad (abbreviated IIT (ISM), Dhanbad) is a

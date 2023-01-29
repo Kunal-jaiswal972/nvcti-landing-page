@@ -1,6 +1,6 @@
 import React from "react";
 
-const Scroll_to_top_btn = () => {
+const ScrollToTopBtn = () => {
   return (
     <span className="scroll-top-arrow">
       <i className="fas fa-angle-up"></i>
@@ -8,4 +8,4 @@ const Scroll_to_top_btn = () => {
   );
 };
 
-export default Scroll_to_top_btn;
+export default ScrollToTopBtn;

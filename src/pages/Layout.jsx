@@ -1,11 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import {
-  Navbar,
-  Preloader,
-  Footer,
-  Scroll_to_top_btn,
-} from "../components";
+import { Navbar, Preloader, Footer, ScrollToTopBtn } from "../components";
 
 const Layout = () => {
   return (
@@ -14,7 +9,7 @@ const Layout = () => {
       <Preloader />
       <Outlet />
       <Footer />
-      <Scroll_to_top_btn />
+      <ScrollToTopBtn />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import Home from "./Home";
 import AboutPage from "./AboutPage";
-import Contact from "./Contact";
 import Layout from "./Layout";
 import Administration from "./Administration";
+import Error from "./error/Error";
 
-export { Home, AboutPage, Contact, Layout, Administration };
+export { Home, AboutPage, Layout, Administration, Error };
