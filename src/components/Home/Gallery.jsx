@@ -67,7 +67,7 @@ const Gallery = () => {
               data-wow-delay="300ms"
             >
               <h4 className="heading">
-                OUR LABS<span>IMAGE GALLERY</span>
+                IMAGE GALLERY<span></span>
               </h4>
             </div>
             <div className="col-md-12 pt-5">

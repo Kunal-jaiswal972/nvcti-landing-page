@@ -7,18 +7,21 @@ const Hero = () => {
   function heading(path) {
     if (path === "/aboutISM") return "IIT(ISM) DHANBAD";
     else if (path === "/aboutNVCTI") return "NVCTI";
+    // else if (path === "/contact") return "Contact Us";
     else return "Administration";
   }
-
+  
   function crumb(path) {
     if (path === "/aboutISM") return "About IIT(ISM) DHANBAD";
     else if (path === "/aboutNVCTI") return "About NVCTI";
+    // else if (path === "/contact") return "Contact Us";
     else return "Administration";
   }
 
   function image(path) {
     if (path === "/aboutISM") return "assests/ism0.jpg";
     else if (path === "/aboutNVCTI") return "assests/nvcti0.jpg";
+    // else if (path === "/contact") return "assests/c0.webp";
     else return "assests/nvcti0.jpg";
   }
 

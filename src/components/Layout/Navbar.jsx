@@ -117,12 +117,22 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link scroll" href="/administration">
-                          ADMINISTRATION
+                        <a className="nav-link scroll" href="/">
+                          FACILITY
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link scroll" href="#contact-sec">
+                        <a className="nav-link scroll" href="/">
+                          LABS
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          className="nav-link scroll"
+                          href={
+                            location.pathname === "/" ? "#contact-sec" : "/"
+                          }
+                        >
                           CONTACT
                         </a>
                       </li>
@@ -214,7 +224,7 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                       <a className="nav-link scroll" href="/aboutISM">
-                        ABOUT ISM
+                        ABOUT IIT(ISM)
                       </a>
                     </li>
                     <li className="nav-item">
@@ -223,8 +233,18 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link scroll" href="/administration">
+                      <a className="nav-link scroll" href="/">
                         ADMINISTRATION
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link scroll" href="/">
+                        FACILITY
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link scroll" href="/">
+                        LABS
                       </a>
                     </li>
                     <li className="nav-item">
@@ -241,7 +261,10 @@ const Navbar = () => {
                       </a>
                     </li> */}
                     <li className="nav-item">
-                      <a className="nav-link scroll" href="#contact-sec">
+                      <a
+                        className="nav-link scroll"
+                        href={location.pathname === "/" ? "#contact-sec" : "/"}
+                      >
                         CONTACT
                       </a>
                     </li>
