@@ -1,6 +1,22 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import Dropdown from "../dropdown/Dropdown";
+import { Dropdown } from "../";
+const info1 = [
+  { path: "/aboutISM", title: "About IIT(ISM)" },
+  { path: "/aboutNVCTI", title: "About NVCTI" },
+  { path: "/administration", title: "Administration" },
+];
+
+const info2 = [
+  { path: "/pdi", title: "PDI" },
+  { path: "/events", title: "Events" },
+  { path: "/inventory", title: "Lab Access" },
+];
+
+const info3 = [
+  { path: "/robotics", title: "Robotics Lab" },
+  { path: "/smart-manufacturing", title: "Smart Manufacturing Lab" },
+];
 
 const Navbar = () => {
   const location = useLocation();
@@ -105,7 +121,7 @@ const Navbar = () => {
                       </li>
                       <li className="nav-item">
                         {/* <div className="nav-link scroll"> */}
-                        <Dropdown />
+                        <Dropdown title="ABOUT" info={info1} />
                         {/* </div> */}
                       </li>
                       <li className="nav-item">
@@ -117,14 +133,10 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link scroll" href="/">
-                          FACILITY
-                        </a>
+                        <Dropdown title="FEATURES" info={info2} />
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link scroll" href="/">
-                          LABS
-                        </a>
+                        <Dropdown title="LABS" info={info3} />
                       </li>
                       <li className="nav-item">
                         <a
@@ -223,20 +235,11 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link scroll" href="/aboutISM">
-                        ABOUT IIT(ISM)
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link scroll" href="/aboutNVCTI">
-                        ABOUT NVCTI
-                      </a>
-                    </li>
-                    <li className="nav-item">
                       <a className="nav-link scroll" href="/">
-                        ADMINISTRATION
-                      </a>
+                        ABOUT
+                      </a>{" "}
                     </li>
+
                     <li className="nav-item">
                       <a className="nav-link scroll" href="/">
                         FACILITY

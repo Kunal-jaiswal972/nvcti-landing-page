@@ -1,15 +1,16 @@
 import React from "react";
 import "./styles.css";
 
-const Dropdown = () => {
+const Dropdown = ({ title, info }) => {
   return (
     <div className="dropdown">
-      <span>ABOUT</span>
+      <span>{title}</span>
       <div className="dropdown-content">
-        <a href="/aboutISM">About IIT(ISM)</a>
-        <a href="/aboutNVCTI">About NVCTI</a>
-        <a href="/labs">Labs</a>
-        <a href="/administration">Administration</a>
+        {info.map((info) => (
+          <a key={info.title} href={info.path}>
+            {info.title}
+          </a>
+        ))}
       </div>
     </div>
   );

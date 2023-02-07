@@ -12,6 +12,7 @@ import Hero from "./About/Hero";
 import Administration from "../pages/Administration";
 import Content from "./About/Content";
 import Contact from "./Home/Contact";
+import Dropdown from "./dropdown/Dropdown";
 
 export {
   Navbar,
@@ -28,4 +29,5 @@ export {
   Administration,
   Content,
   Contact,
+  Dropdown,
 };
