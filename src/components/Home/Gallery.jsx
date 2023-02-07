@@ -63,7 +63,7 @@ const Gallery = () => {
         <div className="section-heading">
           <div className="row">
             <div
-              className="col-lg-6 wow fadeInUp text-center text-lg-left"
+              className="col-lg-6 wow fadeInUp text-center text-md-left"
               data-wow-delay="300ms"
             >
               <h4 className="heading">
@@ -73,7 +73,7 @@ const Gallery = () => {
             <div className="col-md-12 pt-5">
               <div
                 id="js-filters-mosaic"
-                className="cbp-l-filters-button wow fadeInUp text-center text-lg-left"
+                className="cbp-l-filters-button wow fadeInUp text-center text-md-left"
                 data-wow-delay="350ms"
               >
                 <div
@@ -128,18 +128,19 @@ const Gallery = () => {
                 ))}
               </div>
 
-              {/* <div
+              <div
                 id="js-loadMore-lightbox-gallery"
                 className="cbp-l-loadMore-button text-data wow fadeInUp"
                 data-wow-delay="650ms"
               >
                 <div className="row portfolio-foot-detail text-data-inner">
                   <div className="col-7 col-lg-4 offset-lg-6 text-left pl-4">
-                    <span className="p-text">We've Completed More Then</span>
-                    <h4 className="p-num">530</h4>
-                    <span className="p-text">
-                      Projects for Our amazing Clients
-                    </span>
+                    {/* <span className="p-text">We've Completed More Then</span>
+                    <h4 className="p-num">530</h4> */}
+                    {/* <h4 className="p">
+                      See all images
+                    </h4>  */}
+
                   </div>
                   <div className="col-5 col-lg-2 d-flex justify-content-end align-items-center">
                     <button className="btn green-btn rounded-pill">
@@ -150,7 +151,7 @@ const Gallery = () => {
                     </button>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

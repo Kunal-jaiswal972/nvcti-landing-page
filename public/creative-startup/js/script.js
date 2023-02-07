@@ -378,7 +378,7 @@ if($(".scroll").length) {
             cols: 2,
         }, {
             width: 768,
-            cols: 1,
+            cols: 2,
         }, {
             width: 480,
             cols: 1,
@@ -419,13 +419,24 @@ if($(".scroll").length) {
             $this.find(".cbp-wrapper").find(".cbp-item:not(.cbp-item-off)").each(function (index) {
                 $(this).removeClass("even");
 
-                console.log();
                 var val = index + 1;
                 if ($(this).css('left') !== "0px") {
                     $(this).addClass("even");
-
+                }
+                console.log(index);
+                if(index > 5){
+                    console.log($(this));
+                    $(this).addClass("cbp-item-off");
                 }
             });
+            if ($(".cbp-filter-item-active").attr("data-filter") === "*") {
+                console.log('hellow');
+                $("#js-grid-mosaic").height(function (){
+                    const t = $(".cbp-item:first-child").height();
+                    console.log('t', t);
+                    return $(".cbp-item:first-child").height()* (7/($(document).width()>480?2:1));
+                });
+            }
         })
         .on('onAfterLoadMore.cbp', function () {
             // your functionality
@@ -438,6 +449,10 @@ if($(".scroll").length) {
                 var val = index + 1;
                 if ($(this).css('left') !== "0px") {
                     $(this).addClass("even");
+                }
+                if(index > 5){
+                    console.log($(this));
+                    $(this).addClass("cbp-item-off");
                 }
             });
         })
@@ -457,7 +472,19 @@ if($(".scroll").length) {
                 if ($(this).css('left') !== "0px") {
                     $(this).addClass("even");
                 }
+                if(index > 5){
+                    console.log($(this));
+                    $(this).addClass("cbp-item-off");
+                }
             });
+            if ($(".cbp-filter-item-active").attr("data-filter") === "*") {
+                console.log('hiiii');
+                $("#js-grid-mosaic").height(function (){
+                    const t = $(".cbp-item:first-child").height();
+                    console.log('t', t);
+                    return $(".cbp-item:first-child").height()* (7/($(document).width()>480?2:1));
+                });
+            }
         });
 
 
