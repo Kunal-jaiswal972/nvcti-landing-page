@@ -1,7 +1,7 @@
 import React from "react";
-import { About, Gallery, Stats, Slider, Contact } from "../components";
+import { About, Gallery, Stats, Slider, Contact } from "../../components";
 
-const Home = () => {
+const HomeLayout = () => {
   return (
     <>
       <Slider />
@@ -13,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeLayout;

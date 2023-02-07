@@ -1977,6 +1977,9 @@ header .main-navigation nav .navbar-nav .nav-item:nth-child(3n) .nav-link:hover,
     opacity: .8;
 }
 
+.p-text{
+    padding-top: 15px;
+}
 
 /* ===================================
     Media Queries
