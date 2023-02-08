@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,41 +16,41 @@ const Footer = () => {
               <div className="footer-social text-center text-lg-left">
                 <ul className="list-unstyled">
                   <li>
-                    <Link
+                    <a
                       className="wow fadeInUp"
                       to="https://www.facebook.com/nvcti/"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-facebook-f"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       className="wow fadeInDown"
                       to="https://twitter.com/nvcti1"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-twitter"></i>
-                    </Link>
+                    </a>
                   </li>
 
                   <li>
-                    <Link
+                    <a
                       className="wow fadeInDown"
                       to="https://www.linkedin.com/company/nvcti-iitism/"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-linkedin-in"></i>
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       className="wow fadeInUp"
                       to="https://www.instagram.com/nvcti.iitism/"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-instagram"></i>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
