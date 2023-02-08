@@ -1,6 +1,31 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import Dropdown from "../dropdown/Dropdown";
+import { Dropdown } from ".";
+const info1 = [
+  { path: "/about/IIT(ISM)-DHANBAD", title: "About IIT(ISM)" },
+  { path: "/about/NVCTI", title: "About NVCTI" },
+  { path: "/administration", title: "Administration" },
+];
+
+const info2 = [
+  { path: "/pdi", title: "PDI" },
+  { path: "/events", title: "Events" },
+  { path: "/inventory", title: "Lab Access" },
+];
+
+const info3 = [
+  { path: "/labs/gaming-and-animation", title: "Gaming And Animation Lab" },
+  { path: "/labs/electronics-and-iot", title: "Electronics And Iot Lab" },
+  {
+    path: "/labs/mechanical-tools-and-rapid-prototyping",
+    title: "Mechanical Tools And Rapid Prototyping Lab",
+  },
+  {
+    path: "/labs/pouch-battery-cell-assembly",
+    title: "Pouch Battery Cell Assembly Lab",
+  },
+  { path: "/labs/", title: "Robotics Lab" },
+];
 
 const Navbar = () => {
   const location = useLocation();
@@ -82,10 +107,18 @@ const Navbar = () => {
             <div className="row">
               <div className="col-4 col-lg-3">
                 <a className="navbar-brand simple-nav-logo" href="/">
-                  <img src="assests/final.jpg" alt="logo" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/assests/final.jpg"}
+                    alt="logo"
+                  />
                 </a>
                 <a className="navbar-brand fixed-nav-logo" href="/">
-                  <img src="assests/nvcti-transparent.png" alt="logo" />
+                  <img
+                    src={
+                      process.env.PUBLIC_URL + "/assests/nvcti-transparent.png"
+                    }
+                    alt="logo"
+                  />
                 </a>
               </div>
               <div className="col-8 col-lg-9 simple-navbar">
@@ -104,9 +137,7 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        {/* <div className="nav-link scroll"> */}
-                        <Dropdown />
-                        {/* </div> */}
+                        <Dropdown title="ABOUT" info={info1} />
                       </li>
                       <li className="nav-item">
                         <a
@@ -117,14 +148,10 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link scroll" href="/">
-                          FACILITY
-                        </a>
+                        <Dropdown title="FEATURES" info={info2} />
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link scroll" href="/">
-                          LABS
-                        </a>
+                        <Dropdown title="LABS" info={info3} />
                       </li>
                       <li className="nav-item">
                         <a
@@ -205,7 +232,7 @@ const Navbar = () => {
               <div className="col-12 d-flex justify-content-center align-items-center">
                 <a href="/" className="navbar-brand">
                   <img
-                    src="assests/nvcti-light.webp"
+                    src={process.env.PUBLIC_URL + "/assests/nvcti-light.webp"}
                     width="150px"
                     alt="logo"
                   />
@@ -223,20 +250,11 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link scroll" href="/aboutISM">
-                        ABOUT IIT(ISM)
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link scroll" href="/aboutNVCTI">
-                        ABOUT NVCTI
-                      </a>
-                    </li>
-                    <li className="nav-item">
                       <a className="nav-link scroll" href="/">
-                        ADMINISTRATION
-                      </a>
+                        ABOUT
+                      </a>{" "}
                     </li>
+
                     <li className="nav-item">
                       <a className="nav-link scroll" href="/">
                         FACILITY

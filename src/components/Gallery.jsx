@@ -22,34 +22,59 @@ const labs = [
     hover_desc: "ROBOTICS LAB",
   },
   {
-    imgPath: "assests/s1.webp",
-    class: "smart-manufacturing",
+    imgPath: "assests/mech/mech1.jpg",
+    class: "mechanical",
     hover_desc: "SMART MANUFACTURING LAB",
   },
   {
-    imgPath: "assests/s2.webp",
-    class: "smart-manufacturing",
+    imgPath: "assests/mech/mech2.jpg",
+    class: "mechanical",
     hover_desc: "SMART MANUFACTURING LAB",
   },
   {
-    imgPath: "assests/s3.webp",
-    class: "smart-manufacturing",
+    imgPath: "assests/mech/mech3.jpg",
+    class: "mechanical",
     hover_desc: "SMART MANUFACTURING LAB",
   },
   {
-    imgPath: "assests/s4.webp",
-    class: "smart-manufacturing",
+    imgPath: "assests/mech/mech6.jpg",
+    class: "mechanical",
     hover_desc: "SMART MANUFACTURING LAB",
   },
   {
-    imgPath: "assests/s4.webp",
-    class: "lab3",
-    hover_desc: "SMART MANUFACTURING LAB",
+    imgPath: "assests/ga/ga2.png",
+    class: "gaming",
+    hover_desc: "GAMING AND ANIMATION LAB",
   },
   {
-    imgPath: "assests/s4.webp",
-    class: "lab4",
-    hover_desc: "SMART MANUFACTURING LAB",
+    imgPath: "assests/ga/ga4.png",
+    class: "gaming",
+    hover_desc: "GAMING AND ANIMATION LAB",
+  },
+  {
+    imgPath: "assests/ga/ga5.jpg",
+    class: "gaming",
+    hover_desc: "GAMING AND ANIMATION LAB",
+  },
+  {
+    imgPath: "assests/iot/iot1.jpg",
+    class: "iot",
+    hover_desc: "ELECTRONICS AND IOT LAB",
+  },
+  {
+    imgPath: "assests/iot/iot2.jpg",
+    class: "iot",
+    hover_desc: "ELECTRONICS AND IOT LAB",
+  },
+  {
+    imgPath: "assests/iot/iot3.jpg",
+    class: "iot",
+    hover_desc: "ELECTRONICS AND IOT LAB",
+  },
+  {
+    imgPath: "assests/iot/iot4.jpg",
+    class: "iot",
+    hover_desc: "ELECTRONICS AND IOT LAB",
   },
 ];
 
@@ -85,17 +110,14 @@ const Gallery = () => {
                 <div data-filter=".robotics" className="cbp-filter-item">
                   ROBOTICS
                 </div>
-                <div
-                  data-filter=".smart-manufacturing"
-                  className="cbp-filter-item"
-                >
-                  SMART MANUFACTURING
+                <div data-filter=".mechanical" className="cbp-filter-item">
+                  MECHANICAL
                 </div>
-                <div data-filter=".lab3" className="cbp-filter-item">
-                  lab3
+                <div data-filter=".gaming" className="cbp-filter-item">
+                  GAMING
                 </div>
-                <div data-filter=".lab4" className="cbp-filter-item">
-                  lab4
+                <div data-filter=".iot" className="cbp-filter-item">
+                  IOT
                 </div>
               </div>
 
@@ -111,7 +133,10 @@ const Gallery = () => {
                       data-title="NVCTI, IIT(ISM) DHANBAD"
                     >
                       <div className="cbp-caption-defaultWrap">
-                        <img src={lab.imgPath} alt="img" />
+                        <img
+                          src={process.env.PUBLIC_URL + lab.imgPath}
+                          alt="img"
+                        />
                       </div>
                       <div className="cbp-caption-activeWrap portfolio-hover-effect d-flex align-items-end">
                         <div className="portfolio-inner-content">
@@ -140,7 +165,6 @@ const Gallery = () => {
                     {/* <h4 className="p">
                       See all images
                     </h4>  */}
-
                   </div>
                   <div className="col-5 col-lg-2 d-flex justify-content-end align-items-center">
                     <button className="btn green-btn rounded-pill">

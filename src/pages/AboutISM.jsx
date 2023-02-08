@@ -1,13 +1,13 @@
 import React from "react";
 import { Hero, Content } from "../components";
 
-const AboutPage = () => {
+const AboutISM = () => {
   return (
     <>
-      <Hero />
+      <Hero page="aboutISM"/>
       <Content />
     </>
   );
 };
 
-export default AboutPage;
+export default AboutISM;

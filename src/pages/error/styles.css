@@ -25,7 +25,7 @@
   font-size: 80px;
 }
 
-button {
+a.link_404 {
   padding: 12.5px 30px;
   border: 0;
   border-radius: 25px;
@@ -36,14 +36,14 @@ button {
   -webkit-transition: all 0.5s;
 }
 
-button:hover {
+a.link_404:hover {
   outline: 2px solid hsl(116, 56%, 46%);
   box-shadow: 0 0 20px #6fc5ff50;
   background-color: transparent;
   color: black;
 }
 
-button:active {
+a.link_404:active {
   outline: 2px solid hsl(116, 56%, 46%);
   background-color: transparent;
   color: black;

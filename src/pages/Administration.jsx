@@ -4,7 +4,7 @@ import { Team, Testimonial, Hero } from "../components";
 const Administration = () => {
   return (
     <>
-      <Hero />
+      <Hero page="administration"/>
       <section className="stats-sec padding-bottom" id="stats-sec"></section>
       <Team />
       <Testimonial />

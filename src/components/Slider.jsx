@@ -101,16 +101,16 @@ const Slider = () => {
             data-depth="0.1"
           >
             <div className="img-slide">
-              <img src="assests/slide1.webp" />
+              <img src={process.env.PUBLIC_URL + "/assests/slide1.webp"} />
             </div>
             <div className="img-slide">
-              <img src="assests/slide2.webp" />
+              <img src={process.env.PUBLIC_URL + "/assests/slide2.webp"} />
             </div>
             <div className="img-slide">
-              <img src="assests/slide3.webp" />
+              <img src={process.env.PUBLIC_URL + "/assests/slide3.webp"} />
             </div>
             <div className="img-slide">
-              <img src="assests/slide4.webp" />
+              <img src={process.env.PUBLIC_URL + "/assests/slide4.webp"} />
             </div>
           </div>
         </div>

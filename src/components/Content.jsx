@@ -6,7 +6,7 @@ const Content = () => {
   return (
     // <!--main page content-->
     <section className="main" id="main">
-      {location.pathname === "/aboutISM" ? (
+      {location.pathname === "/about/IIT(ISM)-DHANBAD" ? (
         <div className="blog-content padding-top padding-bottom">
           <div className="container">
             <div className="row no-gutters">
@@ -34,16 +34,19 @@ const Content = () => {
                   <div className="row standalone-row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="blog-image wow hover-effect fadeInLeft">
-                        <img src="assests/heritage.jpg" alt="image" />
+                        <img
+                          src={process.env.PUBLIC_URL + "/assests/heritage.jpg"}
+                          alt="image"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 stand-img-des">
                       <div className="d-inline-block">
-                        <p className="sub-heading text-center">
+                        {/* <p className="sub-heading text-center">
                           Most flexible one page
-                        </p>
+                        </p> */}
                         {/* <h2 className="gradient-text1">Standalone Heading</h2> */}
-                        <p className="para_text">
+                        <p className="para_text p-text">
                           Indian Institute of Technology (Indian School of
                           Mines), Dhanbad (abbreviated IIT (ISM), Dhanbad) is a
                           prestigious public technical university located in
@@ -61,7 +64,10 @@ const Content = () => {
                   <div className="row standalone-row align-items-center no-gutters">
                     <div className="col-lg-6 order-lg-2">
                       <div className="blog-image wow hover-effect fadeInLeft">
-                        <img src="assests/ism2.jpg" alt="image" />
+                        <img
+                          src={process.env.PUBLIC_URL + "/assests/ism2.jpg"}
+                          alt="image"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 stand-img-des">
@@ -70,7 +76,7 @@ const Content = () => {
                           Most flexible one page
                         </p>
                         <h2 className="gradient-text1">Standalone Heading</h2> */}
-                        <p className="para_text">
+                        <p className="para_text p-text">
                           Our vision is to be a nationally and internationally
                           acclaimed premier institution of higher technical and
                           scientific education with social commitment having an
@@ -87,7 +93,10 @@ const Content = () => {
                   <div className="row standalone-row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="blog-image wow hover-effect fadeInLeft">
-                        <img src="assests/ism3.jpg" alt="image" />
+                        <img
+                          src={process.env.PUBLIC_URL + "/assests/ism3.jpg"}
+                          alt="image"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 stand-img-des">
@@ -96,7 +105,7 @@ const Content = () => {
                           Most flexible one page
                         </p>
                         <h2 className="gradient-text1">Standalone Heading</h2> */}
-                        <p className="para_text">
+                        <p className="para_text p-text">
                           The Indian School of Mines was formally opened on 9th
                           December 1926, by Lord Irwin, the then Viceroy of
                           India to address the need for trained manpower related
@@ -147,7 +156,10 @@ const Content = () => {
                   <div className="row standalone-row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="blog-image wow hover-effect fadeInLeft">
-                        <img src="assests/nvcti1.webp" alt="image" />
+                        <img
+                          src={process.env.PUBLIC_URL + "/assests/nvcti1.webp"}
+                          alt="image"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 stand-img-des">
@@ -156,7 +168,7 @@ const Content = () => {
                           Most flexible one page
                         </p>
                         <h2 className="gradient-text1">Standalone Heading</h2> */}
-                        <p className="para_text">
+                        <p className="para_text p-text">
                           Naresh Vashisht Centre for Tinkering and Innovation
                           (NVCTI) was established in September 2019 through the
                           recommendation of the 11th BOG meeting of IIT(ISM)
@@ -171,7 +183,10 @@ const Content = () => {
                   <div className="row standalone-row align-items-center no-gutters">
                     <div className="col-lg-6 order-lg-2">
                       <div className="blog-image wow hover-effect fadeInLeft">
-                        <img src="assests/nvcti2.webp" alt="image" />
+                        <img
+                          src={process.env.PUBLIC_URL + "/assests/nvcti2.webp"}
+                          alt="image"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 stand-img-des">
@@ -180,7 +195,7 @@ const Content = () => {
                           Most flexible one page
                         </p>
                         <h2 className="gradient-text1">Standalone Heading</h2> */}
-                        <p className="para_text">
+                        <p className="para_text p-text">
                           The centre, situated in an area of approximately 11000
                           sq feet of the newly constructed Central Research
                           Extension building inside the institute campus, is
@@ -199,7 +214,10 @@ const Content = () => {
                   <div className="row standalone-row align-items-center no-gutters">
                     <div className="col-lg-6">
                       <div className="blog-image wow hover-effect fadeInLeft">
-                        <img src="assests/nvcti3.webp" alt="image" />
+                        <img
+                          src={process.env.PUBLIC_URL + "/assests/nvcti3.webp"}
+                          alt="image"
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 stand-img-des">
@@ -208,7 +226,7 @@ const Content = () => {
                           Most flexible one page
                         </p>
                         <h2 className="gradient-text1">Standalone Heading</h2> */}
-                        <p className="para_text">
+                        <p className="para_text p-text">
                           Our vision is to cultivate young fertile brains as the
                           innovators and entrepreneurs of future by promoting
                           informal learning with a focus on indigenous

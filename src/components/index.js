@@ -1,17 +1,17 @@
-import Navbar from "./Layout/Navbar";
-import Preloader from "./Layout/Preloader";
-import Slider from "./Home/Slider";
-import Team from "./About/Team";
-import About from "./Home/About";
-import Gallery from "./Home/Gallery";
-import Testimonial from "./About/Testimonial";
-import Footer from "./Layout/Footer";
-import Stats from "./Home/Stats";
-import ScrollToTopBtn from "./Layout/ScrollToTopBtn";
-import Hero from "./About/Hero";
-import Administration from "../pages/Administration";
-import Content from "./About/Content";
-import Contact from "./Home/Contact";
+import Navbar from "./Navbar";
+import Preloader from "./Preloader";
+import Slider from "./Slider";
+import Team from "./Team";
+import About from "./About";
+import Gallery from "./Gallery";
+import Testimonial from "./Testimonial";
+import Footer from "./Footer";
+import Stats from "./Stats";
+import ScrollToTopBtn from "./ScrollToTopBtn";
+import Hero from "./Hero";
+import Content from "./Content";
+import Contact from "./Contact";
+import Dropdown from "./dropdown/Dropdown";
 
 export {
   Navbar,
@@ -25,7 +25,7 @@ export {
   Stats,
   ScrollToTopBtn,
   Hero,
-  Administration,
   Content,
   Contact,
+  Dropdown,
 };
