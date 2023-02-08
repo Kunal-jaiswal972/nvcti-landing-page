@@ -18,7 +18,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="wow fadeInUp"
-                      to="https://www.facebook.com/nvcti/"
+                      href="https://www.facebook.com/nvcti/"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-facebook-f"></i>
@@ -27,7 +27,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="wow fadeInDown"
-                      to="https://twitter.com/nvcti1"
+                      href="https://twitter.com/nvcti1"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-twitter"></i>
@@ -37,7 +37,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="wow fadeInDown"
-                      to="https://www.linkedin.com/company/nvcti-iitism/"
+                      href="https://www.linkedin.com/company/nvcti-iitism/"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-linkedin-in"></i>
@@ -46,7 +46,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="wow fadeInUp"
-                      to="https://www.instagram.com/nvcti.iitism/"
+                      href="https://www.instagram.com/nvcti.iitism/"
                       target="_blank"
                     >
                       <i aria-hidden="true" className="fab fa-instagram"></i>
