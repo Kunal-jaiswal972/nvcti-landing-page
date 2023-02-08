@@ -153,18 +153,18 @@ const Gallery = () => {
                 ))}
               </div>
 
-              <div
+              {/* <div
                 id="js-loadMore-lightbox-gallery"
                 className="cbp-l-loadMore-button text-data wow fadeInUp"
                 data-wow-delay="650ms"
               >
                 <div className="row portfolio-foot-detail text-data-inner">
                   <div className="col-7 col-lg-4 offset-lg-6 text-left pl-4">
-                    {/* <span className="p-text">We've Completed More Then</span>
-                    <h4 className="p-num">530</h4> */}
-                    {/* <h4 className="p">
+                    <span className="p-text">We've Completed More Then</span>
+                    <h4 className="p-num">530</h4>
+                    <h4 className="p">
                       See all images
-                    </h4>  */}
+                    </h4> 
                   </div>
                   <div className="col-5 col-lg-2 d-flex justify-content-end align-items-center">
                     <button className="btn green-btn rounded-pill">
@@ -175,7 +175,7 @@ const Gallery = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
