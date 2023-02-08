@@ -144,7 +144,7 @@ const Labs = ({ lab }) => {
       <div className="blog-content padding-top padding-bottom">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-8">
+            <div className="col-12">
               <div className="main_content text-center text-lg-left">
                 <div className="detail_blog">
                   <div className="blog_detail">
@@ -154,10 +154,15 @@ const Labs = ({ lab }) => {
                     <ul className="text-left">
                       {data.equipments.map(({ name, desc, img }, idx) => (
                         <Fragment key={idx}>
-                          <li style={{ listStylePosition: "outside" }}>
+                          <li
+                            style={{
+                              listStylePosition: "outside",
+                              fontSize: "1.25em",
+                              fontWeight: "bold",
+                            }}
+                          >
                             {name} -
                           </li>
-                          <p className="d-text">{desc}</p>
                           <img
                             title={name}
                             width="300px"
@@ -166,9 +171,11 @@ const Labs = ({ lab }) => {
                             alt={name}
                             style={{
                               objectFit: "contain",
-                              marginBottom: "1em",
+                              margin: "1em 0",
+                              marginLeft: "calc(50% - 150px)",
                             }}
                           />
+                          <p className="d-text">{desc}</p>
                         </Fragment>
                       ))}
                     </ul>

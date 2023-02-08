@@ -455,13 +455,16 @@ header .simple-nav-logo{
     text-align: center;
     position: relative;
     z-index: 111;
+    box-shadow: 0px -5px 15px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
     /* outline: 5px solid #f71c52; */
 }
 header .fixed-nav-logo{
     display: none;
 }
 header .navbar-brand img{
-    max-width: 70%;
+    /* max-width: 70%; */
     object-fit: contain;
 }
 header .main-navigation{

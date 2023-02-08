@@ -72,12 +72,12 @@ const About = () => {
                   at contributing positively to the economy, the environment and
                   the society.
                 </p>
-                <a href="#about-sec" className="btn anim-btn rounded-pill">
+                {/* <a href="#about-sec" className="btn anim-btn rounded-pill">
                   LEARN MORE <span></span>
                   <span></span>
                   <span></span>
                   <span></span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
