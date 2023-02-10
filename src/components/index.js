@@ -12,6 +12,8 @@ import Hero from "./Hero";
 import Content from "./Content";
 import Contact from "./Contact";
 import Dropdown from "./dropdown/Dropdown";
+import PlusIcon from "./PlusIcon";
+import CustomAccordion from "./accordion/Accordion";
 
 export {
   Navbar,
@@ -28,4 +30,6 @@ export {
   Content,
   Contact,
   Dropdown,
+  PlusIcon,
+  CustomAccordion,
 };

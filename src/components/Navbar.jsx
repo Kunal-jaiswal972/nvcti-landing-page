@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { Dropdown } from ".";
+import { CustomAccordion, Dropdown } from ".";
 const info1 = [
   { path: "/about/IIT(ISM)-DHANBAD", title: "About IIT(ISM)" },
   { path: "/about/NVCTI", title: "About NVCTI" },
@@ -249,21 +249,22 @@ const Navbar = () => {
                         HOME
                       </a>
                     </li>
-                    <li className="nav-item">
-                      <a className="nav-link scroll" href="/">
-                        ABOUT
-                      </a>{" "}
+                    <li className="nav-item acc">
+                      {/* <a className="nav-link scroll"> */}
+                      <CustomAccordion title="ABOUT" info={info1} />
+                      {/* </a> */}
                     </li>
 
-                    <li className="nav-item">
-                      <a className="nav-link scroll" href="/">
-                        FACILITY
-                      </a>
+                    <li className="nav-item acc">
+                      {/* <a className="nav-link scroll" href="/"> */}
+                        <CustomAccordion title="FACILITY" info={info2} />
+                      {/* </a> */}
                     </li>
-                    <li className="nav-item">
-                      <a className="nav-link scroll" href="/">
-                        LABS
-                      </a>
+                    <li className="nav-item acc">
+                      {/* <a className="nav-link scroll" href="/"> */}
+                      <CustomAccordion title="LABS" info={info3} />
+
+                      {/* </a> */}
                     </li>
                     <li className="nav-item">
                       <a
