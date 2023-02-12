@@ -9,6 +9,7 @@ import {
   Error,
   LabLayout,
   Labs,
+  Projects,
 } from "./pages";
 
 class App extends React.Component {
@@ -50,6 +51,7 @@ class App extends React.Component {
                 path="gaming-and-animation"
                 element={<Labs lab="gamingAndAnimation" />}
               />
+              <Route exact path="projects" element={<Projects />} />
             </Route>
           </Route>
           <Route path="*" element={<Error />} />

@@ -43,6 +43,12 @@ const lookUp = {
     img: "/assests/nvcti0.jpg",
     crumb: "Pouch battery cell assembly",
   },
+  projects: {
+    heading: "Projects",
+    path: "/labs/projects",
+    img: "/assests/nvcti0.jpg",
+    crumb: "Projects",
+  },
 };
 
 const Hero = ({ page }) => {

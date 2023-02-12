@@ -2284,9 +2284,10 @@ header
   header .upper-nav {
     display: none;
   }
-  /*.heading {*/
-  /*    font-size: 44px;*/
-  /*}*/
+  .loader-img{
+    width: 20% !important;
+    height: 20% !important;
+  }
   .slider-area .slider-arrows {
     display: none;
   }
@@ -2507,6 +2508,10 @@ header
   }
   .heading {
     font-size: 44px;
+  }
+  .loader-img{
+    width: 35% !important;
+    height: 35% !important;
   }
   .slider-area .slider-arrows {
     display: none;
@@ -2746,6 +2751,11 @@ header
   header .side-menu .navbar-brand img {
     max-width: 60%;
   }
+}
+
+.loader-img{
+  width: 10%;
+  height: 10%;
 }
 
 @media (min-width: 1200px) {

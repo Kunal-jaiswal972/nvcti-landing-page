@@ -25,6 +25,7 @@ const info3 = [
     title: "Pouch Battery Cell Assembly Lab",
   },
   { path: "/labs/", title: "Robotics Lab" },
+  { path: "/labs/projects", title: "Projects" },
 ];
 
 const Navbar = () => {
@@ -65,6 +66,7 @@ const Navbar = () => {
                       href="https://www.facebook.com/nvcti/"
                       className="link-holder fb"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="lab la-facebook-f"></i>
                     </a>
@@ -74,6 +76,7 @@ const Navbar = () => {
                       href="https://twitter.com/nvcti1"
                       target="_blank"
                       className="link-holder twit"
+                      rel="noreferrer"
                     >
                       <i className="lab la-twitter"></i>
                     </a>
@@ -83,6 +86,7 @@ const Navbar = () => {
                       href="https://www.linkedin.com/company/nvcti-iitism/"
                       target="_blank"
                       className="link-holder link-in"
+                      rel="noreferrer"
                     >
                       <i className="lab la-linkedin-in"></i>
                     </a>
@@ -92,6 +96,7 @@ const Navbar = () => {
                       href="https://www.instagram.com/nvcti.iitism/"
                       target="_blank"
                       className="link-holder insta"
+                      rel="noreferrer"
                     >
                       <i className="lab la-instagram"></i>
                     </a>
@@ -172,6 +177,7 @@ const Navbar = () => {
                       href="https://www.facebook.com/nvcti/"
                       className="link-holder fb"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <i className="lab la-facebook-f"></i>
                     </a>
@@ -181,6 +187,7 @@ const Navbar = () => {
                       href="https://twitter.com/nvcti1"
                       target="_blank"
                       className="link-holder twit"
+                      rel="noreferrer"
                     >
                       <i className="lab la-twitter"></i>
                     </a>
@@ -190,6 +197,7 @@ const Navbar = () => {
                       href="https://www.linkedin.com/company/nvcti-iitism/"
                       target="_blank"
                       className="link-holder link-in"
+                      rel="noreferrer"
                     >
                       <i className="lab la-linkedin-in"></i>
                     </a>
@@ -199,6 +207,7 @@ const Navbar = () => {
                       href="https://www.instagram.com/nvcti.iitism/"
                       target="_blank"
                       className="link-holder insta"
+                      rel="noreferrer"
                     >
                       <i className="lab la-instagram"></i>
                     </a>
@@ -257,7 +266,7 @@ const Navbar = () => {
 
                     <li className="nav-item acc">
                       {/* <a className="nav-link scroll" href="/"> */}
-                        <CustomAccordion title="FACILITY" info={info2} />
+                      <CustomAccordion title="FACILITY" info={info2} />
                       {/* </a> */}
                     </li>
                     <li className="nav-item acc">
@@ -311,6 +320,7 @@ const Navbar = () => {
                         className="instagram-text-hvr"
                         href="https://twitter.com/nvcti1"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i className="fab fa-twitter"></i>
                       </a>
@@ -320,6 +330,7 @@ const Navbar = () => {
                         className="instagram-text-hvr"
                         href="https://www.youtube.com/@nareshvashishtcentrefortin1613"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i className="fab fa-youtube"></i>
                       </a>
@@ -329,6 +340,7 @@ const Navbar = () => {
                         className="instagram-text-hvr"
                         href="https://www.instagram.com/nvcti.iitism/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i className="fab fa-instagram"></i>
                       </a>
