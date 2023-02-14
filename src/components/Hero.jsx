@@ -22,25 +22,25 @@ const lookUp = {
   ga: {
     heading: "GAMING AND ANIMATION AND DESIGN LAB",
     path: "/labs/gaming-and-animation",
-    img: "/assests/nvcti0.jpg",
+    img: "/assests/ga/ga0.jpg",
     crumb: "Gaming and animation lab",
   },
   iot: {
     heading: "ELECTRONIC AND CIRCUITS AND IOT LAB",
     path: "/labs/electronics-and-iot",
-    img: "/assests/nvcti0.jpg",
+    img: "/assests/iot/iot0.jpg",
     crumb: "Electronic and IOT lab",
   },
   mech: {
     heading: "MECHANICAL TOOLS AND RAPID PROTOTYPING LAB",
     path: "/labs/mechanical-tools-and-rapid-prototyping",
-    img: "/assests/nvcti0.jpg",
+    img: "/assests/mech/mech0.jpg",
     crumb: "Mechanical tools lab",
   },
   pb: {
     heading: "POUCH BATTERY CELL ASSEMBLY LAB",
     path: "/labs/pouch-battery-cell-assembly",
-    img: "/assests/nvcti0.jpg",
+    img: "/assests/pb/pb0.jpg",
     crumb: "Pouch battery cell assembly",
   },
 };

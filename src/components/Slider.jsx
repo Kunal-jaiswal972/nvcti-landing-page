@@ -20,7 +20,7 @@ const Slider = () => {
                   To build a vibrant innovation ecosystem by establishing a
                   network between innovators, academia and incubators.
                 </p>
-                <a
+                {/* <a
                   href="#about-sec"
                   className="btn anim-btn rounded-pill scroll"
                 >
@@ -28,7 +28,7 @@ const Slider = () => {
                   <span></span>
                   <span></span>
                   <span></span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="slider-slide">
@@ -41,7 +41,7 @@ const Slider = () => {
                   solving zeal and abilities to work on new
                   technology/innovation based start-ups.
                 </p>
-                <a
+                {/* <a
                   href="#about-sec"
                   className="btn anim-btn rounded-pill scroll"
                 >
@@ -49,7 +49,7 @@ const Slider = () => {
                   <span></span>
                   <span></span>
                   <span></span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="slider-slide">
@@ -62,7 +62,7 @@ const Slider = () => {
                   them to work with new ideas and converting them into concept
                   and prototype.
                 </p>
-                <a
+                {/* <a
                   href="#about-sec"
                   className="btn anim-btn rounded-pill scroll"
                 >
@@ -70,7 +70,7 @@ const Slider = () => {
                   <span></span>
                   <span></span>
                   <span></span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="slider-slide">
@@ -83,7 +83,7 @@ const Slider = () => {
                   global problems through experimentation, innovation and
                   creativity.
                 </p>
-                <a
+                {/* <a
                   href="#about-sec"
                   className="btn anim-btn rounded-pill scroll"
                 >
@@ -91,7 +91,7 @@ const Slider = () => {
                   <span></span>
                   <span></span>
                   <span></span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -101,16 +101,28 @@ const Slider = () => {
             data-depth="0.1"
           >
             <div className="img-slide">
-              <img src={process.env.PUBLIC_URL + "/assests/slide1.webp"} />
+              <img
+                src={process.env.PUBLIC_URL + "/assests/slide1.webp"}
+                alt="nvcti"
+              />
             </div>
             <div className="img-slide">
-              <img src={process.env.PUBLIC_URL + "/assests/slide2.webp"} />
+              <img
+                src={process.env.PUBLIC_URL + "/assests/slide2.webp"}
+                alt="nvcti"
+              />
             </div>
             <div className="img-slide">
-              <img src={process.env.PUBLIC_URL + "/assests/slide3.webp"} />
+              <img
+                src={process.env.PUBLIC_URL + "/assests/slide3.webp"}
+                alt="nvcti"
+              />
             </div>
             <div className="img-slide">
-              <img src={process.env.PUBLIC_URL + "/assests/slide4.webp"} />
+              <img
+                src={process.env.PUBLIC_URL + "/assests/slide4.webp"}
+                alt="nvcti"
+              />
             </div>
           </div>
         </div>
