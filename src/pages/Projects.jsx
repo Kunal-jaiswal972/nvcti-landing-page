@@ -31,6 +31,41 @@ const data = {
       leader: "ANIKET KUMAR SAHU ",
       labs: "Animation and Game Design",
     },
+    {
+      title: "Creating a video game with Indian traditional features",
+      leader: "MEENAKSHI GAUTAM ",
+      labs: "Animation and Game Design",
+    },
+    {
+      title: "Creating a video game with Indian traditional features",
+      leader: "MEENAKSHI GAUTAM ",
+      labs: "Animation and Game Design",
+    },
+    {
+      title: "IOT Based Tiffin Box",
+      leader: "SHYAM BABU KAMTI ",
+      labs: "Electronics and IoT",
+    },
+    {
+      title: "Text recognition and vocalization for the blind",
+      leader: "UDAYAN CHATTERJEE",
+      labs: "Electronics and IoT",
+    },
+    {
+      title: "Autonomous Stair Climbing Robot ",
+      leader: "Aman Pandey",
+      labs: "Electronics and IoT",
+    },
+    {
+      title: "Automated Warehouse System",
+      leader: "Harshit Sharma",
+      labs: "Electronics and IoT",
+    },
+    {
+      title: "IoT Home Automation ",
+      leader: "Chennupati Reshma ",
+      labs: "Electronic & IOT",
+    },
   ],
 };
 
