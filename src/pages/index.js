@@ -6,6 +6,7 @@ import Administration from "./Administration";
 import Error from "./error/Error";
 import LabLayout from "./Layouts/LabLayout";
 import Labs from "./Labs";
+import Projects from "./Projects";
 
 export {
   HomeLayout,
@@ -16,4 +17,5 @@ export {
   Error,
   LabLayout,
   Labs,
+  Projects,
 };

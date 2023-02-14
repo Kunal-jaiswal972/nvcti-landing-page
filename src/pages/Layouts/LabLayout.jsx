@@ -15,6 +15,9 @@ const LabLayout = () => {
         <Hero page="pb" />
       )}
       {/* {location.pathname == "/labs/gaming-and-animation" && <Hero page="ga" />} */}
+      {location.pathname === "/labs/projects" && (
+        <Hero page="projects" />
+      )}
       <Outlet />
     </>
   );
