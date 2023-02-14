@@ -886,14 +886,14 @@ header
   position: absolute;
   right: 30px;
   top: 61px;
-  display: inline-block;
+  display: none;
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
   .sidemenu_btn {
-    display: block !important;
+    display: inline-block !important;
   }
-} */
+}
 
 .sidemenu_btn span {
   height: 2px;
