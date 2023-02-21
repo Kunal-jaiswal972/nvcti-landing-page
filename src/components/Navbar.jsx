@@ -1,4 +1,3 @@
-import { GitHub } from "@mui/icons-material";
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { CustomAccordion, Dropdown } from ".";
@@ -233,7 +232,7 @@ const Navbar = () => {
       <div className="side-menu hidden side-menu-opacity">
         <div className="bg-overlay"></div>
         <div className="inner-wrapper">
-          <span className="btn-close" id="btn_sideNavClose">
+          <span className="btn-close" id="btn_sideNavClose" style={{zIndex:"2"}}>
             <i></i>
             <i></i>
           </span>
