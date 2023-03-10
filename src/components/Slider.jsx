@@ -2,7 +2,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <section className="slider-area">
+    <section className="slider-area" style={{ display: "none" }}>
       <div className="bg-overlay"></div>
       <div className="container position-relative">
         <div className="inner-bg-overlay"></div>
